@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+	<html>
+	<head>
+	<script data-ad-client="ca-pub-7511341705393257" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<title>Love calculator by Dilshad Spartan </title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.3">
+	<meta charset="utf-8">
+	<meta lang="en">
+
+	<meta name="description" content="Lovw calculator this is my first project with javascript html css i know it's not perfect but next time i will learn more. more practice and create more projects ">
+	<meta name="author"  content="Dilshad Spartan ">
+	<meta name="keywords"  content="Dilshad Spartan, love calculator, love, payar percentage, first project,">
+	<meta http-equiv="refresh" content="5s" >
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+	*{margin:0 ;
+	   padding:0 ;
+	}
+	    /*** Body part***/
+	    
+	body{background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);}
+	      /*** Main part ***/
+	main{
+	display:flex ;
+	height:100vh ;
+	justify-content:center ;
+	align-items:center ;
+	align-content:center;
+	}
+	  
+	div{height:900px ;
+	   width:600px ;
+	   box-shadow: 4px 14px 12px 9px  #262626 ;
+	   border:6px solid white ;
+	   padding:50px ;
+	   display:flex ;justify-content:center ;
+	   align-items:center ;
+	   flex-direction:column ;
+	   transition:all 0.3s linear ;
+	   border-radius:50px ;
+	}
+	h1{color:white ;
+	margin:0 ;
+	text-transform:uppercase ;}
+	input:focus{border:2px solid red;
+	
+	}
+	input[type=text]{
+	text-align:center ;
+	outline:none ;
+	margin:auto;
+	width:500px ;
+	font-weight:bold ;
+	text-transform:uppercase ;
+	color:black ;
+	padding:9px 9px 10px 10px ;
+	border-radius:50px ;
+	font-size:2em ;font-family:Arial,sans-serif;
+	}
+	.fa-heart{
+	color:red ;
+	transform:scale(1.5);
+	margin-left:40% ;
+	margin-top:auto;
+	}
+	      /*** Button ***/
+	.button{padding:8px ;
+	padding-right:40px ;
+	padding-left:40px ;
+	margin:20px ;
+	margin-left:43px ;
+	margin-top:50px ;
+	font-family:serif ;
+	color:white ;
+	background-color:#262626 ;
+	outline:none ;
+	box-shadow:1px 2px 2px 1px #fff;
+	border-radius:25px ;
+	font-size:2em ;
+	font-weight:bold ;
+	text-transform:uppercase ;
+	}
+	#txt1{
+	font-family:serif;
+	font-weight:bold ;
+	background-color:rgba(0,0,0,0.0);
+	outline:none ;
+	border:none ;
+	padding-right:25px ;
+	padding-left:25px ;
+	font-size:3em;
+	width:110px;
+	margin-left:40%;
+	margin-top:3%;
+	color:white ;
+
+	}
+	footer{display:flex ;justify-content:center ;flex-direction:rows;}
+	i{padding:24px ;
+	margin-top:8px;}
+	.fa-google{color:red ;}
+	.fa-facebook{color:#273c75;}
+	.fa-instagram{color:#e84393;}
+	span{color:#fff;
+	     font-weight:bold ;
+	     word-break:10px;
+	     font-size:23px ;
+	}
+	b{font-size:2em ; margin-top:auto;}
+	#btn{ background-color:#5f27cd ; color:white ;
+	
+	}
+	.V{background-color:rgba(0,0,0,0.0);transition:all 0.9s linear ;}
+	</style>
+	</head>
+	<body>
+	<main>
+	<div>
+	<h1> Love calculator </h1>
+	<br><br>
+   <form action="#" onsubmit="return">
+	<input type="text"  placeholder="Enter your name" id="Fn">
+	<br><br>
+	<i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+	<br><br>
+	<input type="text" placeholder="Enter your love name" id="Ln" selected="selected" >
+	<br><br>
+	<input type="button" class="button"  id="btn1" value="Result" onclick="M()"> 
+	<input  type="reset"  class="button" value="Clear"  onclick="R()" id="btn"><br>
+	<input type="text" disabled="disabled"  id="txt1"> 
+	</form>
+	<br>
+	<footer>
+	<a href="#"><i class="fa fa-facebook fa-3x"> </i></a>
+	<a href="https://instagram.com/dilshad_spartan?igshid=vh144i4e01hz " ><i class="fa fa-instagram fa-3x"> </i></a>
+	<a href="mailto:Dilshadspartan26@gmail.com " > <i class="fa fa-google fa-3x "> </i></a>
+    <a href="https://github.com/Ansaridilshad" ><i class="fa fa-github fa-3x" > </i></a>
+    </footer>
+	      <br><br>
+	          <span> <b>&copy </b>2019. Created by Dilshad Spartan .</span>
+	</div>
+	</main>
+	
+	<script type="text/javascript">
+	
+	function M(){
+	let love = document.getElementById("Fn").value;
+	let  llove = document.getElementById("Ln").value;
+	if(love == ""){
+	alert("Enter please ");
+	}else if(!isNaN(love)){
+	alert("only letter");
+	}else if(love.length <=2){
+	alert("Min 3 latters");
+	}else if(llove == ""){
+	alert("Enter your love name ");
+	}else if(!isNaN(llove)){
+	alert("only letter");
+	}else if(llove.length <=2){
+	alert("Min 3 latters");
+	}else{
+	let lovedata = Math.random() *100 ;
+	lovedata = Math.floor(lovedata);
+	document.getElementById("txt1").value = `${lovedata}%`;//innerHTML = `${lovedata }%`//
+   document.getElementById("btn1").disabled =true;
+    document.getElementById("btn1").classList.add("V");
+	}
+	}
+	
+   function R(){
+	document.getElementById("btn1").disabled = false ;
+document.getElementById("btn1").classList.remove("V");
+	
+	}
+	
+	</script>
+	</body>
+	</html
